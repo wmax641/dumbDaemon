@@ -21,7 +21,7 @@ import pwd
 ##### Settings (change these): #####
 
 #PID file location. The daemon's process id will be stored here so we can 
-#find the process again when we want to kill the server
+#find the process again when we want to kill the daemon
 PID_FILE = "/var/run/daemonSpawn.pid"
 
 
@@ -125,7 +125,8 @@ def startDaemon():
 
    #Run daemon
    while(True):
-      time.sleep(2)
+      # Doing work
+      time.sleep(2) # Working hard!
 
 
 def stopDaemon(pid):
